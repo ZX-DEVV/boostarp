@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Rose Designs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, rgba(255, 214, 230, 0.8), rgba(255, 183, 197, 0.8)), 
+                        url('floral2.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: fadeInBody 1.5s ease-in-out;
+        }
+
+        .sign-in-container {
+            background: #ffeef2;
+            border-radius: 15px;
+            padding: 50px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 36px;
+            color: #b56576;
+            margin-bottom: 15px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        p {
+            color: #777;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .input-group i {
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+            color: #b56576;
+            font-size: 18px;
+            transition: transform 0.3s ease;
+        }
+
+        .input-group:hover i {
+            transform: scale(1.2);
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 15px 15px 15px 45px;
+            border: 2px solid #f3cdd7;
+            border-radius: 10px;
+            font-size: 16px;
+            background-color: #fffafc;
+            color: #555;
+            transition: all 0.3s ease;
+        }
+
+        .input-group input:focus {
+            border-color: #b56576;
+            background-color: #ffeef2;
+            outline: none;
+            box-shadow: 0 0 10px rgba(255, 105, 135, 0.4);
+        }
+
+        .btn {
+            width: 100%;
+            padding: 15px;
+            background-color: #f28a94;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            font-weight: 500;
+            animation: pulse 2s infinite;
+        }
+
+        .btn:hover {
+            background-color: #fff;
+            color: #f28a94;
+            box-shadow: 0 10px 20px rgba(242, 138, 148, 0.3);
+            transform: translateY(-3px);
+        }
+
+        .footer-text {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .footer-text a {
+            color: #b56576;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer-text a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: linear-gradient(135deg, rgba(255, 179, 205, 0.8), rgba(241, 126, 154, 0.8));
+            padding: 40px 20px;
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .footer-section h3 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 22px;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .footer-section p, .footer-section ul, .footer-section li {
+            font-size: 14px;
+            color: #ffeef2;
+        }
+
+        .social-links {
+            margin-top: 10px;
+        }
+
+        .social-icon {
+            display: inline-block;
+            margin: 0 15px;
+            font-size: 24px;
+            color: #fff;
+            transition: all 0.3s;
+        }
+
+        .social-icon:hover {
+            color: #f28a94;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ffeef2;
+        }
+
+        .footer-bottom p {
+            font-size: 14px;
+        }
+
+        /* Animations */
+        @keyframes fadeInBody {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 10px rgba(242, 138, 148, 0.3);
+            }
+            50% {
+                box-shadow: 0 0 20px rgba(242, 138, 148, 0.5);
+            }
+            100% {
+                box-shadow: 0 0 10px rgba(242, 138, 148, 0.3);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sign-in-container">
+        <h2>Sign In</h2>
+        <p>Welcome back! Please sign in to continue.</p>
+        <form>
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" id="username" name="username" required placeholder="Username or Email">
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="password" name="password" required placeholder="Password">
+            </div>
+            <button type="submit" class="btn">Sign In</button>
+            <p class="footer-text">Don't have an account? <a href="file:///C:/Users/fujitsu/Desktop/bostrap/create.html">Create one</a></p>
+        </form>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We bring beauty to the web with elegant designs inspired by nature.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Rose Designs. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

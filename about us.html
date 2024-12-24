@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fefefe;
+            color: #333;
+        }
+
+        .about-us {
+            padding: 50px 0;
+            background: linear-gradient(to bottom, rgba(230, 128, 128, 0.527), #fff5f8);
+        }
+
+        .heading h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 3.5rem;
+            color: rgba(197, 36, 63, 0.938);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .heading span {
+            color:  rgba(197, 36, 63, 0.938);
+        }
+
+        /* Content Section */
+        .about-content h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2rem;
+            color: rgba(197, 36, 63, 0.938);
+            margin-top: 20px;font-weight: bolder;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .about-content p {
+            color: #5f6368;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* Video Styling */
+        .about-images {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .about-images video {
+            width: 100%;font-size: larger;
+            max-width: 650px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            margin-top: 15px;
+        }
+
+        /* Button Styling */
+        .cta-button {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .cta-button button {
+            font-family: 'Poppins', sans-serif;
+            background-color:  rgba(197, 36, 63, 0.938);
+            color: white;
+            font-size: 1.3rem;
+            padding: 12px 40px;
+            border: none;
+            border-radius: 50px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 5px 15px rgba(255, 64, 129, 0.4);
+        }
+
+        .cta-button button:hover {
+            background-color: #f06292;
+            transform: scale(1.05);
+        }
+
+        /* Icon Styling */
+        .icon {
+            font-size: 2rem;
+            color: #e91e63;
+        }
+
+        .icon:hover {
+            color: #ff4081;
+        }
+    </style>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="about-us" id="about">
+        <div class="container">
+            <!-- Heading Section -->
+            <div class="heading">
+                <h1><i class="bi bi-heart-fill icon"></i> About <span>Us</span></h1>
+            </div>
+            <!-- About Content Section -->
+            <div class="row about-content">
+                <div class="col-md-6 text">
+                    <h2><i class="bi bi-person-heart icon"></i> Who We Are</h2>
+                    <p>We are passionate about bringing the beauty of flowers into your life. Our goal is to offer high-quality flowers, stunning arrangements, and exceptional service. Whether it's for a wedding, special event, or just a gesture of kindness, we ensure every bloom is carefully selected to bring joy.</p>
+                </div>
+                <div class="col-md-6 text">
+                    <h2><i class="bi bi-flower3 icon"></i> Our Mission</h2>
+                    <p>Our mission is simple: to provide fresh, vibrant flowers and personalized arrangements that make every moment unforgettable. We are committed to sustainability and work closely with local growers to ensure our flowers are ethically sourced and environmentally friendly.</p>
+                </div>
+            </div>
+            <!-- Video Section -->
+            <div class="row about-images">
+                <div class="col-12">
+                    <video controls>
+                        <source src="flora.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <!-- Call-To-Action Button -->
+            <div class="cta-button">
+                <button id="learn-more-btn" onclick="window.location.href='file:///C:/Users/fujitsu/Desktop/bostrap/learn.html';">
+                    <i class="bi bi-arrow-right-circle"></i> Learn More
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

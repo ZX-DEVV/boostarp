@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account </title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, rgba(224, 117, 117, 0.589), #ffb6c148);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .create-account-container {
+            background: rgba(255, 250, 250, 0.9);
+            border: 2px solid #ffdde1;
+            border-radius: 20px;
+            padding: 50px 40px;
+            box-shadow: 0 10px 30px rgba(255, 105, 180, 0.2);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 36px;
+            color: #ff6f91;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #777;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .input-group i {
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+            color: #ff6f91;
+            font-size: 18px;
+            transition: transform 0.3s ease;
+        }
+
+        .input-group:hover i {
+            transform: scale(1.3);
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 15px 15px 15px 50px;
+            border: 2px solid #ffd1dc;
+            border-radius: 12px;
+            font-size: 16px;
+            background-color: #fffaf0;
+            transition: 0.3s;
+        }
+
+        .input-group input:focus {
+            border-color: #ff6f91;
+            background-color: #fff;
+            outline: none;
+            box-shadow: 0 0 15px rgba(255, 105, 180, 0.4);
+        }
+
+        .btn {
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            background: linear-gradient(to right, #ff6f91, #ffb6c1);
+            color: white;
+            transition: 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            background: linear-gradient(to right, #ffb6c1, #ff6f91);
+            box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
+            transform: translateY(-3px);
+        }
+
+        .footer-text {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .footer-text a {
+            color: #ff6f91;
+            text-decoration: none;
+        }
+
+        .footer-text a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #ff6f91;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        footer .social-links {
+            margin-top: 10px;
+        }
+
+        footer .social-icon {
+            margin: 0 10px;
+            font-size: 24px;
+            color: #ff6f91;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        footer .social-icon:hover {
+            color: #ffb6c1;
+            transform: scale(1.2);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="create-account-container">
+        <h2>Welcome to Rose Designs</h2>
+        <p>Join our community and embrace the beauty!</p>
+        <form>
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+            </div>
+            <button type="submit" class="btn">Create Account</button>
+        </form>
+        <p class="footer-text">Already a member? <a href="file:///C:/Users/fujitsu/Desktop/bostrap/sigh%20in.html">Sign In</a></p>
+    </div>
+ 
+       
+</body>
+</html>

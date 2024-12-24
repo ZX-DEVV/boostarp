@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        body {
+            background-image: linear-gradient(to bottom right, rgba(165, 42, 42, 0.747), #fff0f5);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Review Section */
+        .review {
+            width: 90%;
+            padding: 40px;
+            text-align: center;
+            color: rgba(219, 111, 111, 0.658);
+        }
+
+        .review h1 {
+            font-size: 3.5rem;
+            color: #fff;
+            background-color: rgba(219, 111, 111, 0.377);
+            padding: 20px 40px;
+            border-radius: 50px;
+            font-family: 'Dancing Script', cursive;
+            margin-bottom: 50px;
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+            letter-spacing: 2px;
+        }
+
+        .review span {
+            color: #ffe6eb;
+        }
+
+        .box-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .box {
+            width: 350px;
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            overflow: hidden;
+        }
+
+        .box:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .user {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .user img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            margin-right: 15px;
+            border: 5px solid #ffe6eb;
+        }
+
+        .user-info h3 {
+            font-size: 1.4rem;
+            margin: 0;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .user-info p {
+            font-size: 1rem;
+            color: #888;
+        }
+
+        .stars {
+            margin: 20px 0;
+        }
+
+        .stars i {
+            color: #ff6f91;
+            font-size: 1.4rem;
+            margin: 0 3px;
+        }
+
+        .box p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+            padding: 0 10px;
+            font-style: italic;
+        }
+
+        .icon-wrapper {
+            margin-top: 15px;
+            color: #ff6f91;
+            font-size: 1.3rem;
+        }
+
+        .icon-wrapper i {
+            margin: 0 10px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .icon-wrapper i:hover {
+            color: #ffa6b5;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .box-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="review">
+        <h1>Our Beloved <span>Customers</span></h1>
+        <div class="box-container">
+            <!-- Review 1 -->
+            <article class="box">
+                <div class="user">
+                    <img src="client1.jpeg" alt="John Doe">
+                    <div class="user-info">
+                        <h3>John Doe</h3>
+                        <p><i class="fas fa-briefcase"></i> CEO of Frozen Deo</p>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod urna eu nulla hendrerit."</p>
+                <div class="icon-wrapper">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-thumbs-up"></i>
+                    <i class="fas fa-smile"></i>
+                </div>
+            </article>
+            
+            <!-- Review 2 -->
+            <article class="box">
+                <div class="user">
+                    <img src="client-2.jpg" alt="Jane Smith">
+                    <div class="user-info">
+                        <h3>Jane Smith</h3>
+                        <p><i class="fas fa-chart-line"></i> Marketing Manager</p>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient."</p>
+                <div class="icon-wrapper">
+                    <i class="fas fa-grin-hearts"></i>
+                    <i class="fas fa-handshake"></i>
+                    <i class="fas fa-heart"></i>
+                </div>
+            </article>
+
+            <!-- Review 3 -->
+            <article class="box">
+                <div class="user">
+                    <img src="client3.jpeg" alt="Michael Johnson">
+                    <div class="user-info">
+                        <h3>Michael Johnson</h3>
+                        <p><i class="fas fa-laptop-code"></i> Freelancer</p>
+                    </div>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>"Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."</p>
+                <div class="icon-wrapper">
+                    <i class="fas fa-grin-stars"></i>
+                    <i class="fas fa-smile-beam"></i>
+                    <i class="fas fa-heart"></i>
+                </div>
+            </article>
+        </div>
+    </section>
+</body>
+</html>
